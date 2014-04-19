@@ -1,5 +1,7 @@
 #lsblk to list all  partitions
 # pacat /dev/urandom > padsp
+# to enable disable services sudo update-rc.d apache2 disable
+
 
 alias cd..='cd ..'
 alias nkill='pkill -f'
@@ -36,18 +38,18 @@ alias tc='lsof -n /dev/nvidia0'
 alias endsu='exit & sudo su'
 alias iso='dd if=/dev/cdrom of=~/cdrom_image.iso'
 alias glxspheres='/opt/VirtualGL/bin/glxspheres64'
-alias tglxspheres='optirun /opt/VirtualGL/bin/glxspheres64'
+alias tglxspheres='vblank_mode=0 optirun /opt/VirtualGL/bin/glxspheres64'
 alias httpserve='python -m SimpleHTTPServer'
 
 
 # Screen
 alias scradmin='$HOME/.ratpoison/screen_run admin'
 alias scrschool='$HOME/.ratpoison/screen_run school'
-alias screen='screen.pl'
 
 
 # Switch layouts
 alias qwerty='setxkbmap us'
+alias bgkey='setxkbmap bg'
 alias colemak='setxkbmap us -variant colemak'
 alias svenmak='setxkbmap us2 -variant colemak'
 
